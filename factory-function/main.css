@@ -5,6 +5,7 @@
 }
 
 .contact {
+    flex-basis: 25%;
     border: 2px solid black;
     padding: 2%;
     text-align: center;
