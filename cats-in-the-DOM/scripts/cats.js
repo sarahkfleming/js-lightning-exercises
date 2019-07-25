@@ -30,6 +30,11 @@ const catBioStringGenerator = (cat) => {
     <p>${cat.bio}</p>`
 }
 
+const displayCatsinDOM = (HTMLString) => {
+  catOutputContainer.innerHTML += HTMLString
+}
+
 cats.forEach(cat => {
-    catOutputContainer.innerHTML += catBioStringGenerator(cat)
+  const catHTML = catBioStringGenerator(cat)
+  displayCatsinDOM(catHTML)
 })
